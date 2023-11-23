@@ -1,3 +1,5 @@
 {
-  "item.testmod1.bronze_ingot": "Bronze Ingot"
+  "item.testmod1.bronze_ingot": "Bronze Ingot",
+
+  "creativetab.mod_tab": "Mods"
 }

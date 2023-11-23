@@ -1,6 +1,7 @@
 package net.khweled.TestMod1;
 
 import com.mojang.logging.LogUtils;
+import net.khweled.TestMod1.item.ModCreativeModeTabs;
 import net.khweled.TestMod1.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,7 @@ public class TestMod {
 
         ModItems.ITEMS.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
+        ModCreativeModeTabs.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in

@@ -13,6 +13,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()));
+
+    /*
+    public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate",
+            () -> new Item(new Item.Properties()));
+
+     */
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
