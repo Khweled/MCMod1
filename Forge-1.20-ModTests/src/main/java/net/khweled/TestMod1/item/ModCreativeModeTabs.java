@@ -20,6 +20,11 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BRONZE_INGOT.get());
+
+                        pOutput.accept(ModItems.BRONZE_HELMET.get());
+                        pOutput.accept(ModItems.BRONZE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.BRONZE_LEGGINGS.get());
+                        pOutput.accept(ModItems.BRONZE_BOOTS.get());
                     })
                     .build());
 

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category" : "equipment",
+  "key": {
+    "#": {
+      "item": "testmod:bronze_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "result": {
+    "item": "testmod:bronze_helmet"
+  },
+  "show_notification": true
+}

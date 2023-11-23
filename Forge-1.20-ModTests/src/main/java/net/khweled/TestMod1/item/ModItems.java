@@ -1,6 +1,7 @@
 package net.khweled.TestMod1.item;
 
 import net.khweled.TestMod1.TestMod;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,14 +15,18 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()));
 
-    /*
+
     public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet",
-            () -> new Item(new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate",
-            () -> new Item(new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register("bronze_leggings",
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots",
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-     */
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

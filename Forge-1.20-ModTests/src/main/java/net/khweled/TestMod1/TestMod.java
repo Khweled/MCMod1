@@ -51,6 +51,12 @@ public class TestMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.BRONZE_INGOT);
         }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.BRONZE_HELMET);
+            event.accept(ModItems.BRONZE_CHESTPLATE);
+            event.accept(ModItems.BRONZE_LEGGINGS);
+            event.accept(ModItems.BRONZE_BOOTS);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

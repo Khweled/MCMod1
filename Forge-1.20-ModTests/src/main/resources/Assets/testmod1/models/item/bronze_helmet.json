@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "testmod1:item/bronze_ingot"
+    "layer0": "testmod1:item/bronze_helmet"
   }
 }
