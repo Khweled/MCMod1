@@ -1,6 +1,6 @@
-package net.khweled.TestMod1.item;
+package net.khweled.TestMod.item;
 
-import net.khweled.TestMod1.TestMod;
+import net.khweled.TestMod.TestMod;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -11,8 +11,8 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    BRONZE("bronze", 33, new int[]{2,6,5,2}, 15, SoundEvents.ARMOR_EQUIP_IRON,
-            0f, 0f, () -> Ingredient.of(ModItems.BRONZE_INGOT.get()) );
+    BRONZE("bronze", 30, new int[]{3,7,6,2}, 15, SoundEvents.ARMOR_EQUIP_IRON,
+            1f, 0f, () -> Ingredient.of(ModItems.BRONZE_INGOT.get()) );
 
     private final String name;
     private final int durabilityMultiplier;

@@ -1,8 +1,9 @@
-package net.khweled.TestMod1;
+package net.khweled.TestMod;
 
 import com.mojang.logging.LogUtils;
-import net.khweled.TestMod1.item.ModCreativeModeTabs;
-import net.khweled.TestMod1.item.ModItems;
+import net.khweled.TestMod.block.ModBlocks;
+import net.khweled.TestMod.item.ModCreativeModeTabs;
+import net.khweled.TestMod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,9 +11,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -22,14 +21,15 @@ import org.slf4j.Logger;
 @Mod(TestMod.MOD_ID)
 public class TestMod {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "testmod1";
+    public static final String MOD_ID = "testmod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.ITEMS.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         ModCreativeModeTabs.register(modEventBus);
 

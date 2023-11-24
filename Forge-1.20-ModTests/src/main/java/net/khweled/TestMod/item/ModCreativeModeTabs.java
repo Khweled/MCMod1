@@ -1,6 +1,7 @@
-package net.khweled.TestMod1.item;
+package net.khweled.TestMod.item;
 
-import net.khweled.TestMod1.TestMod;
+import net.khweled.TestMod.TestMod;
+import net.khweled.TestMod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BRONZE_INGOT.get());
+
+                        pOutput.accept(ModBlocks.BRONZE_BLOCK.get());
 
                         pOutput.accept(ModItems.BRONZE_HELMET.get());
                         pOutput.accept(ModItems.BRONZE_CHESTPLATE.get());

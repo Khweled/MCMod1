@@ -1,6 +1,6 @@
-package net.khweled.TestMod1.item;
+package net.khweled.TestMod.item;
 
-import net.khweled.TestMod1.TestMod;
+import net.khweled.TestMod.TestMod;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;

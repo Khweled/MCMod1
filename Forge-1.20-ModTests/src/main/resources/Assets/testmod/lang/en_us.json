@@ -1,0 +1,12 @@
+{
+  "item.testmod.bronze_ingot": "Bronze Ingot",
+
+  "block.testmod.bronze_block": "Block of Bronze",
+
+  "item.testmod.bronze_helmet": "Bronze Helmet",
+  "item.testmod.bronze_chestplate": "Bronze Chestplate",
+  "item.testmod.bronze_leggings": "Bronze Leggings",
+  "item.testmod.bronze_boots": "Bronze Boots",
+
+  "creativetab.mod_tab": "Mods"
+}
