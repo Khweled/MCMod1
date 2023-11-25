@@ -18,7 +18,7 @@ public class ModItems {
 
     //Tools
     public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword",
-            () -> new SwordItem(ModToolTiers.BRONZE,3,-2.0F ,new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.BRONZE,3,-2.4F ,new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
             () -> new PickaxeItem(ModToolTiers.BRONZE,1,-2.8F ,new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe",
@@ -33,7 +33,6 @@ public class ModItems {
     //Armor
     public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet",
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));
-
     public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate",
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register("bronze_leggings",
@@ -42,17 +41,6 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
-/*
-    ("iron_sword", new SwordItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
-    ("iron_pickaxe", new PickaxeItem(Tiers.IRON, 1, -2.8F, new Item.Properties()));
-    ("iron_axe", new AxeItem(Tiers.IRON, 6.0F, -3.1F, new Item.Properties()));
-    ("iron_hoe", new HoeItem(Tiers.IRON, -2, -1.0F, new Item.Properties()));
-    ("diamond_sword", new SwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()));
-    ("diamond_shovel", new ShovelItem(Tiers.DIAMOND, 1.5F, -3.0F, new Item.Properties()));
-    ("diamond_pickaxe", new PickaxeItem(Tiers.DIAMOND, 1, -2.8F, new Item.Properties()));
-    ("diamond_axe", new AxeItem(Tiers.DIAMOND, 5.0F, -3.0F, new Item.Properties()));
-    ("diamond_hoe", new HoeItem(Tiers.DIAMOND, -3, 0.0F, new Item.Properties()));
-*/
 
 
     public static void register(IEventBus eventBus){
