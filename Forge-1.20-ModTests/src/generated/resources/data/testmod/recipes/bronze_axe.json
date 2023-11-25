@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "testmod:bronze_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "#S",
+    " S"
+  ],
+  "result": {
+    "item": "testmod:bronze_axe"
+  },
+  "show_notification": true
+}

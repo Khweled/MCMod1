@@ -1,8 +1,7 @@
 package net.khweled.TestMod.item;
 
 import net.khweled.TestMod.TestMod;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,10 +11,26 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
+    //Misc Items
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()));
 
 
+    //Tools
+    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword",
+            () -> new SwordItem(ModToolTiers.BRONZE,3,-2.0F ,new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.BRONZE,1,-2.8F ,new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe",
+            () -> new AxeItem(ModToolTiers.BRONZE,5.5F,-3.0F ,new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
+            () -> new ShovelItem(ModToolTiers.BRONZE,1.5F,-3.0F,new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe",
+            () -> new HoeItem(ModToolTiers.BRONZE,-2,-1.0F ,new Item.Properties()));
+
+
+
+    //Armor
     public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet",
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new Item.Properties()));
 
@@ -26,6 +41,18 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots",
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+
+/*
+    ("iron_sword", new SwordItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
+    ("iron_pickaxe", new PickaxeItem(Tiers.IRON, 1, -2.8F, new Item.Properties()));
+    ("iron_axe", new AxeItem(Tiers.IRON, 6.0F, -3.1F, new Item.Properties()));
+    ("iron_hoe", new HoeItem(Tiers.IRON, -2, -1.0F, new Item.Properties()));
+    ("diamond_sword", new SwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()));
+    ("diamond_shovel", new ShovelItem(Tiers.DIAMOND, 1.5F, -3.0F, new Item.Properties()));
+    ("diamond_pickaxe", new PickaxeItem(Tiers.DIAMOND, 1, -2.8F, new Item.Properties()));
+    ("diamond_axe", new AxeItem(Tiers.DIAMOND, 5.0F, -3.0F, new Item.Properties()));
+    ("diamond_hoe", new HoeItem(Tiers.DIAMOND, -3, 0.0F, new Item.Properties()));
+*/
 
 
     public static void register(IEventBus eventBus){

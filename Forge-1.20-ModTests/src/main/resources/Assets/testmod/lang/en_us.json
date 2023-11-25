@@ -3,6 +3,12 @@
 
   "block.testmod.bronze_block": "Block of Bronze",
 
+  "item.testmod.bronze_sword": "Bronze Sword",
+  "item.testmod.bronze_pickaxe": "Bronze Pickaxe",
+  "item.testmod.bronze_axe": "Bronze Axe",
+  "item.testmod.bronze_Shovel": "Bronze Shovel",
+  "item.testmod.bronze_hoe": "Bronze Hoe",
+
   "item.testmod.bronze_helmet": "Bronze Helmet",
   "item.testmod.bronze_chestplate": "Bronze Chestplate",
   "item.testmod.bronze_leggings": "Bronze Leggings",

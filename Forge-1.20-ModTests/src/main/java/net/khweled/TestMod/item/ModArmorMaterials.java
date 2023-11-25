@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    BRONZE("bronze", 30, new int[]{3,7,6,2}, 15, SoundEvents.ARMOR_EQUIP_IRON,
+    BRONZE("bronze", 29, new int[]{3,7,6,2}, 15, SoundEvents.ARMOR_EQUIP_IRON,
             1f, 0f, () -> Ingredient.of(ModItems.BRONZE_INGOT.get()) );
 
     private final String name;

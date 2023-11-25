@@ -15,11 +15,11 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class ModBlocks {
-    private static final DeferredRegister<Block> BLOCKS =
+    public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
 
-    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block.json",
+    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
