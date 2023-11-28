@@ -55,4 +55,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     }
 
+    private ItemModelBuilder damagedHandheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(TestMod.MOD_ID, "item/" + item.getId().getPath()));
+
+    }
+
 }
